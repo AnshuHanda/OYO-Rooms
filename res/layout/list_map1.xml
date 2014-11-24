@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+           android:id="@+id/horizontalScrollView1"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           >       
+
+<RelativeLayout 
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+   
+<Button 
+        android:id="@+id/map12"
+        android:layout_width="152dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+ 		  />
+
+       <TextView
+           android:layout_width="wrap_content"
+			            android:layout_height="match_parent"
+			            android:id="@+id/maintable"
+			             android:layout_alignBottom="@+id/map12"
+           android:layout_alignParentTop="true"
+           android:layout_marginLeft="14dp"
+           android:layout_toRightOf="@+id/map12"
+     />
+   
+
+</RelativeLayout>
+
+</HorizontalScrollView>

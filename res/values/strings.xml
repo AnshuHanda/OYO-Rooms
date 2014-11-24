@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OYO ROOMS</string>
+    <string name="action_settings">Settings</string>
+    <string name="booking_form">BOOKING FORM</string>
+    <string name="fname">First Name</string>
+    <string name="lname">Last Name</string>
+    <string name="gender">GENDER</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="selectdate">Date</string>
+    <string name="submit">SUBMIT</string>
+    <string name="form">BOOKING FORM</string>
+
+</resources>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="462dp"
+        android:background="#fbfbfb"
+        android:orientation="vertical" >
+
+        <!--TITLE  -->
+		
+	
+	  <TextView
+            android:id="@+id/hotel_name"
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:typeface="serif"
+            android:textColor="#020efc"
+            android:textSize="12pt"
+             /> 
+       
+         <TextView
+            android:id="@+id/title"
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/hotel_name"
+            android:gravity="center"
+            android:text="@string/form"
+            android:textColor="#000000"
+            android:textSize="10pt" />
+		
+			<TextView
+    			android:id="@+id/FirstName"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/fname"
+    			android:paddingTop="8dp"
+    			android:textColor="#6c695c"
+    			android:layout_below="@+id/title"
+    			android:textSize="8pt">
+			</TextView>
+		 
+				<EditText
+    				android:id="@+id/EditTextName"
+    				android:layout_height="wrap_content"
+    				android:layout_below="@+id/FirstName"
+    				android:inputType="textPersonName"
+    				android:layout_width="fill_parent">
+				</EditText>	
+					<TextView
+    			android:id="@+id/LastName"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/lname"
+    			android:paddingTop="8dp"
+    			android:textColor="#6c695c"
+    			android:layout_below="@+id/EditTextName"
+    			android:textSize="8pt">
+			</TextView>
+						<EditText
+    				android:id="@+id/EditTextName1"
+    				android:layout_height="wrap_content"
+    				android:layout_below="@+id/LastName"
+    				android:inputType="textPersonName"
+    				android:layout_width="fill_parent">
+				</EditText>	
+							<TextView
+    			android:id="@+id/Gender"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/gender"
+    			android:paddingTop="8dp"
+    			android:textColor="#6c695c"
+    			android:layout_below="@+id/EditTextName1"
+    			android:textSize="8pt">
+			</TextView>  							 <RadioGroup
+							        android:id="@+id/radioSex"
+							        android:layout_below="@+id/Gender"
+							        android:layout_width="wrap_content"
+							        android:orientation="horizontal"
+							        android:layout_height="wrap_content" >
+							 
+							        <RadioButton
+							            android:id="@+id/radioMale"
+							            android:layout_width="wrap_content"
+							            android:layout_height="48dp"
+							            android:textColor="#d12a0f"
+							            android:checked="true"
+							            android:text="@string/male" />
+							 
+							        <RadioButton
+							            android:id="@+id/radioFemale"
+							            android:layout_width="wrap_content"
+							            android:textColor="#d12a0f"
+							            android:layout_height="wrap_content"
+							            android:text="@string/female" />
+ 
+    						</RadioGroup>
+     								 
+     								 <Button
+     								     android:id="@+id/submitbutton"
+     								     android:layout_width="wrap_content"
+     								     android:layout_height="wrap_content"
+     								     android:layout_alignParentBottom="true"
+     								     android:layout_centerHorizontal="true"
+     								     android:background="@drawable/list_selector"
+     								     android:text="@string/submit" />
+
+     								 <ImageButton
+     								     android:id="@+id/startpickDate"
+     								     android:layout_width="wrap_content"
+     								     android:layout_height="wrap_content"
+     								     android:layout_alignParentRight="true"
+     								     android:layout_below="@+id/radioSex"
+     								     android:layout_marginRight="31dp"
+     								     android:contentDescription="@string/selectdate"
+     								     android:cropToPadding="true"
+     								     android:paddingTop="8dp"
+     								     android:src="@drawable/calender_icon" />
+
+     								<!--   <EditText
+     								     android:id="@+id/editStartDate"
+     								     android:layout_width="fill_parent"
+     								     android:layout_height="wrap_content"
+     								     android:layout_alignParentLeft="true"
+     								     android:layout_below="@+id/start_ib"
+     								     android:editable="false"
+     								     android:ems="10"
+     								     android:paddingTop="8dp" />
+
+     								 <EditText
+     								     android:id="@+id/editEndDate"
+     								     android:layout_width="fill_parent"
+     								     android:layout_height="wrap_content"
+     								     android:layout_above="@+id/end_ib"
+     								     android:layout_alignParentLeft="true"
+     								     android:editable="false"
+     								     android:ems="10" />
+-->
+
+     								 <TextView
+     								     android:id="@+id/enddateDisplay"
+     								     android:layout_width="wrap_content"
+     								     android:layout_height="wrap_content"
+     								     android:layout_alignParentLeft="true"
+     								     android:layout_below="@+id/startpickDate"
+     								     android:paddingTop="10dp"
+     								     android:text="End Date"
+     								     android:editable="false"
+     								     android:textColor="#6c695c"
+     								     android:textSize="8pt" />
+
+     								 <ImageButton
+     								     android:id="@+id/endpickDate"
+     								     android:layout_width="wrap_content"
+     								     android:layout_height="wrap_content"
+     								     android:layout_alignParentRight="true"
+     								     android:layout_alignTop="@+id/enddateDisplay"
+     								     android:contentDescription="@string/selectdate"
+     								     android:cropToPadding="true"
+     								     android:src="@drawable/calender_icon" />
+
+     								 <TextView
+     								     android:id="@+id/startdateDisplay"
+     								     android:layout_width="wrap_content"
+     								     android:layout_height="wrap_content"
+     								     android:layout_alignParentLeft="true"
+     								     android:layout_alignTop="@+id/startpickDate"
+     								     android:paddingTop="8dp"
+     								     android:text="Start Date"
+     								     android:editable="false"
+     								     android:textColor="#6c695c"
+     								     android:textSize="8pt" />
+
+    	</RelativeLayout>
+</ScrollView>
